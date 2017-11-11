@@ -60,6 +60,7 @@ class BlogsController < ApplicationController
     # @blog.published! if @blog.draft?
     # @blog.draft! if @blog.published?
 
+    #toggla iz 0 v 1 oz obratno
     if @blog.draft?
       @blog.published!
     elsif @blog.published?
