@@ -1,6 +1,10 @@
 class PortfoliosController < ApplicationController
 
   def index
+    # vzame samo izbrane z querijem, seprav ki imajo subtitle RoR
+    # @portfolio_items = Portfolio.where(subtitle: 'Ruby on Rails')
+    # @portfolio_items = Portfolio.angular
+    # @portfolio_items = Portfolio.ruby_on_rails_portfolio_items
     @portfolio_items = Portfolio.all
   end
 
