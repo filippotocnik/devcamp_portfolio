@@ -1,5 +1,7 @@
 class PortfoliosController < ApplicationController
 
+  layout "portfolio"
+
   def index
     # vzame samo izbrane z querijem, seprav tiste, ki imajo subtitle RoR
     # @portfolio_items = Portfolio.where(subtitle: 'Ruby on Rails')
