@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/filippotocnik/copyright_tool_filipp
+  revision: e6f33824e93ad1370e9bbdf9686785f5eec3e265
+  specs:
+    copyright_tool_filipp (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -193,6 +199,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.beta3)
   byebug
   coffee-rails (~> 4.2)
+  copyright_tool_filipp!
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
