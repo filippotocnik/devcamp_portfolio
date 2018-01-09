@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= @page_title %></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
+
+<head>
+  <title>
+    <%= @page_title %>
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all',
                                'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application',
+      <%= javascript_include_tag 'application',
                                'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<body>
+  <div class="site-wrapper">
 
-    <%= render 'shared/nav', location: 'top' %>
+    <div class="site-wrapper-inner">
 
-    <%= login_helper %>
+      <div class="cover-container">
 
-    <%= yield %>
+        <%= render 'shared/application_nav' %>
 
-    <%= copyright_generator %>
+        <%= login_helper %>
 
-  <%= source_helper('application') %>
+        <%= yield %>
 
-  </body>
+        <%= copyright_generator %>
+
+        <%= source_helper('application') %>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
