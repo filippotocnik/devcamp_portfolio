@@ -58,3 +58,4 @@ gem 'copyright_tool_filipp', git: 'https://github.com/filippotocnik/copyright_to
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'font-awesome-rails'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'jquery-ui-rails'
