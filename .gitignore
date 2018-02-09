@@ -28,3 +28,5 @@
 config/secrets.yml.key
 
 config/secrets.yml.enc
+
+.env
