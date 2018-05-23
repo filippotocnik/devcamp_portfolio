@@ -16,9 +16,9 @@ module ApplicationHelper
     end
   end
 
-  def copyright_generator
-    CopyrightToolFilipp::Renderer.copyright('Filip Potocnik', 'All rights reserved')
-  end
+  #def copyright_generator
+  #  CopyrightToolFilipp::Renderer.copyright('Filip Potocnik', 'All rights reserved')
+  #end
 
   def nav_items
     [
